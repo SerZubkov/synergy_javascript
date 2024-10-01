@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <!-- Подключение файла CSS -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Описание задания -->
+  <p class="task">
+    Тема: “JS Common” Практическое задание 1: При помощи JavaScript создайте элемент h1, 
+    добавьте внутрь текст ‘Hello World !’ и выведите этот тег на страницу
+  </p>
+  <script>
+    // Создаем элемент h1
+    const h1 = document.createElement('h1');
+
+    // Добавляем текст внутрь элемента
+    h1.textContent = 'Hello World !';
+
+    // Добавляем элемент h1 на страницу в тело документа
+    document.body.appendChild(h1);
+  </script>
+</body>
+
+</html>

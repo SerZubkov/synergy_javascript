@@ -1,0 +1,24 @@
+{
+  "name": "synergy_javascript",
+  "version": "1.0.0",
+  "description": "Стек технологий JavaScript | Практические задания",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ./projects"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerZubkov/synergy_javascript.git"
+  },
+  "keywords": [],
+  "author": "Зубков Сергей",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerZubkov/synergy_javascript/issues"
+  },
+  "homepage": "https://github.com/SerZubkov/synergy_javascript#readme",
+  "type": "module",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список сотрудников</title>
+  <!-- Подключение файла CSS -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Описание задания -->
+  <p class="task">
+    Тема: “JS Common” Практическое задание 2:
+    При помощи JavaScript создайте список ol и выведите его на страницу.
+    Создайте массив employees и заполните его объектами (5-6 штук) с ключами firstName и
+    lastName в которых соответственно должны быть записаны имя и фамилия.
+    Создайте цикл который будет проходить по элементам массива. На каждой итерации нужно создавать элемент li, внутрь
+    которого записывать строку с именем и фамилией, а после этого добавлять li в ранее созданный список ol.
+    В итоге на странице должен отображаться список с именами и фамилиями
+  </p>
+
+  <script>
+    // Массив объектов с именами и фамилиями сотрудников
+    const employees = [
+      { firstName: 'Иван', lastName: 'Иванов' },
+      { firstName: 'Алексей', lastName: 'Смирнов' },
+      { firstName: 'Ольга', lastName: 'Кузнецова' },
+      { firstName: 'Мария', lastName: 'Попова' },
+      { firstName: 'Дмитрий', lastName: 'Соколов' },
+      { firstName: 'Екатерина', lastName: 'Петрова' }
+    ];
+
+    // Создаем элемент ol (нумерованный список)
+    const ol = document.createElement('ol');
+
+    // Проходим по каждому элементу массива employees
+    employees.forEach(employee => {
+      // Создаем элемент li (элемент списка)
+      const li = document.createElement('li');
+
+      // Записываем имя и фамилию сотрудника в элемент li
+      li.textContent = `${employee.firstName} ${employee.lastName}`;
+
+      // Добавляем элемент li в ol
+      ol.appendChild(li);
+    });
+
+    // Добавляем список ol на страницу
+    document.body.appendChild(ol);
+  </script>
+</body>
+
+</html>
